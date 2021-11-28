@@ -7,3 +7,5 @@ edition = "2021"
 
 [dependencies]
 quiche = "0.10.0"
+smol = "1.2.5"
+

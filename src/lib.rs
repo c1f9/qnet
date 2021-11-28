@@ -19,6 +19,3 @@ impl QuicSocket {
     }
 }
 
-fn main() {
-    println!("Hello, world!");
-}
