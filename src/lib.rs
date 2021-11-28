@@ -13,7 +13,7 @@ impl QuicSocket {
         let mut config = quiche::Config::new(quiche::PROTOCOL_VERSION)?;
         config.set_cc_algorithm_name("reno")?;
 
-        let mut socket = Async::<UdpSocket>::bind("")?;
+        let mut socket = Async::new( UdpSocket::bind("")?)?;
 
         Ok( Self { config, socket } )
     }
