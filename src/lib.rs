@@ -15,7 +15,7 @@ impl QuicSocket {
 
         let mut socket = Async::<UdpSocket>::bind("")?;
 
-        Self { config, socket }
+        Ok( Self { config, socket } )
     }
 }
 
